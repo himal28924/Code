@@ -110,8 +110,7 @@ $("#fish2Id").myfunction();
 
 
 
-function bubbleAnimation(bubble,num){
-  let a = num;
+function bubbleAnimation(bubble){
   let w = $(window).width();
   let forWidth = Math.floor(Math.random() * w + 1) + 100;
   let forTime = Math.floor(Math.random()*(10000-6000)) + 6000;
