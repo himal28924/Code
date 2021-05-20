@@ -97,6 +97,32 @@ setInterval(moveDiv, 5000);
 
 // -------
 
+$("#seahorse").on("mouseover", function () {
+  $("#seahorse").stop();
+  let h = $(document).height() - 150;
+  let w = $(document).width() - 150;
+  let forHeight = Math.floor(Math.random() * h + 1);
+  150;
+  let forWidth = Math.floor(Math.random() * w + 1);
+  $(this).animate(
+    {
+      left: forWidth,
+      top: forHeight, 
+      
+    },
+    500
+  )
+$('#seahorse').fadeOut(2000);
+$('#seahorse').fadeIn();
+$('#seahorse').slideUp(1000);
+$('#seahorse').fadeIn(1000);
+$("#seahorse").slideDown(500);
+$("#seahorse").myfunction();
+
+});
+
+// --------
+
 // moving fish
  (function ($) {
   $.fn.myfunction = function () {
