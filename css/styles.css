@@ -37,7 +37,11 @@ img {
     height: 200px;
     width: 200px;
 }
-
+#jelly{
+    width:200px;
+    height:250px;
+     /* left:500px; */
+}
 .bubbleClass {
     width: 100px;
     height: 100px;

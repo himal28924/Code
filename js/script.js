@@ -122,7 +122,31 @@ $("#seahorse").myfunction();
 });
 
 // --------
+  function jellyFish(jelly){
+    let top1 = $(window).height();
+    $(jelly).css({height:250,width:200});
+    $(jelly).css({left:500,top:top1})
 
+    $(jelly)
+    .animate({
+      left: 500,
+      top: 0,
+    },3000),
+    $(jelly)
+    .animate({
+      left: 500,
+      top: top1,
+    },3000),
+      $(jelly).animate({
+        left: 500,
+        top: $(document).top,
+      },1000,function(){
+        jellyFish($(jelly));
+      });
+      
+  };
+  jellyFish($("#Jelly"));
+// ------
 // moving fish
  (function ($) {
   $.fn.myfunction = function () {
