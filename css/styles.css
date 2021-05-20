@@ -31,12 +31,14 @@ img {
     height: 100px;
 }
 #houseOfOctopus{
-    top:500px;
-    left:400px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 #octopus{
-    top:500px;
-    left:400px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 
 /* #bubble1Id{
