@@ -50,26 +50,32 @@ $("#fish2Id").on("mouseover", function () {
 $("#fish2Id").myfunction();
 });
 
-$('#houseOfOctopus').on("click",function(){
-  $("#octopus").stop();
+//octopus is sleeping in its home
+
+$('#houseOfOctopus').on("click",function()
+{
   let h = $(document).height() - 150;
   let w = $(document).width() - 150;
-  let forHeight = Math.floor(Math.random() * h + 1);
-  150;
-  let forWidth = Math.floor(Math.random() * w + 1);
-  $(this).animate(
-    {
-      left: forWidth,
-      top: forHeight,
-    },
-    1000
-  );
-$("#octopus").myfunction();
-})
-
-
-
-
+  let forHeight =h/2.5;
+  let forWidth = w/2.5;
+  $("#octopus")
+  .animate({
+    left: forWidth,
+    top: forHeight,
+  },1000),
+   $("#octopus").animate({
+      height: "+=500",
+      width: "+=500",
+    },100),
+    $("#octopus").animate({
+      height: "-=500",
+      width: "-=500",
+    },1000),
+    $("#octopus").animate({
+      left: w,
+      top: h,
+    },1000);
+});
 
 
 
