@@ -66,7 +66,7 @@ $('#houseOfOctopus').on("click",function()
    $("#octopus").animate({
       height: "+=500",
       width: "+=500",
-    },100),
+    },500),
     $("#octopus").animate({
       height: "-=500",
       width: "-=500",
