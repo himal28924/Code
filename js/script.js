@@ -180,11 +180,10 @@ $("#fish2Id").myfunction();
       let positonBubbleX = $(this).offset().top;
       let positonBubbleY = $(this).offset().left;
       
-      $("#fighterFish").animate({left:positonBubbleY,top:positonBubbleX},100);
+      $("#fighterFish").animate({left:positonBubbleY,top:positonBubbleX},50);
       $("#fighterFish").animate({left:0,top:0});
       $(this).stop();
       bubbleAnimation($(this));
-      $(this).removing(); 
          
     });
     
