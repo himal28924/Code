@@ -25,6 +25,14 @@ img {
     width: 100px;
     height: 100px;
 }
+#houseOfOctopus{
+    top:500px;
+    left:400px;
+}
+#octopus{
+    top:500px;
+    left:400px;
+}
 
 /* #bubble1Id{
     position: relative;
