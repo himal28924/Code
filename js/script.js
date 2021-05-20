@@ -112,11 +112,15 @@ $("#fish2Id").myfunction();
     $(this).on("click", function () {
       let positonBubbleX = $(this).offset().top;
       let positonBubbleY = $(this).offset().left;
+      
+      $("#fighterFish").animate({left:positonBubbleY,top:positonBubbleX},100);
+      $("#fighterFish").animate({left:0,top:0});
       $(this).stop();
-      $("#fighterFish").animate({left:positonBubbleY,top:positonBubbleX},10);
       bubbleAnimation($(this));
-      $(this).removing();      
+      $(this).removing(); 
+         
     });
+    
   };
 })(jQuery);
 
