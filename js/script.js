@@ -1,6 +1,6 @@
 
 // orange fish move to position while clicking
-$("html").on("click", function (e) {
+$(document).on("click", function (e) {
   $("#fish1Id").stop();
   let x = e.pageX - 80;
   let y = e.pageY - 80;
@@ -18,11 +18,15 @@ $("#fish1Id").on("dblclick", function () {
     .animate({
       height: "+=30",
       width: "+=30",
-    })
-    .delay(1000)
-    .animate({
-      width: "-=30",
+    }),
+    $("#fish1Id").animate({
       height: "-=30",
+      width: "-=50",
+    });
+    $("#fish1Id").stop();
+    $("#fish1Id").css({
+      height: "250",
+      width: "250",
     });
     $("#fish1Id").myfunction();
 
@@ -64,6 +68,7 @@ $("#fish2Id").myfunction();
       },
       6000,
     function(){
+      $("#fish1Id").stop();
       $("#fish1Id").myfunction();
       $("#fish2Id").myfunction();
     }
