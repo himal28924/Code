@@ -84,15 +84,16 @@ $("#fish2Id").myfunction();
 (function ($) {
   $.fn.removing = function () {
     $(this).on("click", function () {
+      let positonBubbleX = $(this).offset().top;
+      let positonBubbleY = $(this).offset().left;
       $(this).stop();
+      $("#fighterFish").animate({left:positonBubbleY,top:positonBubbleX});
       bubbleAnimation($(this));
-$(this).removing();
-
-
-      
+      $(this).removing();      
     });
   };
 })(jQuery);
+
 
 
 
