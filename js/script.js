@@ -107,7 +107,7 @@ $("#fish2Id").myfunction();
       let positonBubbleX = $(this).offset().top;
       let positonBubbleY = $(this).offset().left;
       $(this).stop();
-      $("#fighterFish").animate({left:positonBubbleY,top:positonBubbleX});
+      $("#fighterFish").animate({left:positonBubbleY,top:positonBubbleX},10);
       bubbleAnimation($(this));
       $(this).removing();      
     });
